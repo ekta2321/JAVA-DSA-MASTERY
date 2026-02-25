@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+/**
+ * Foundation Practice: Even/Odd Logic
+ * Time Complexity: O(N) - The loop runs 'N' times.
+ * Space Complexity: O(1) - We use a constant amount of extra memory.
+ */
+public class EvenOddCheck {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter how many numbers you want to check: ");
+        int n = sc.nextInt();
+        
+        // Loop runs 'n' times to process each input
+        for (int i = 0; i < n; i++) {
+            System.out.print("Enter number " + (i + 1) + ": ");
+            int num = sc.nextInt();
+            
+            if (num % 2 == 0) {
+                System.out.println(num + " is Even");
+            } else {
+                System.out.println(num + " is Odd");
+            }
+        }
+        
+        
+    }
+}
+

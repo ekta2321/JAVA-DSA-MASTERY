@@ -1,5 +1,7 @@
 //https://www.geeksforgeeks.org/problems/count-squares3649/1
 
+//Time COMPLEXITY :--    O(sqrt(n))
+
 class Solution {
     static int countSquares(int n) {
         // code here
@@ -8,6 +10,20 @@ class Solution {
             count++;
         }
         return count;
+    }
+}
+
+
+
+
+
+//More Optimised Elite 
+//time complexity O(n)
+class Solution {
+    static int countSquares(int n) {
+        // code here
+        return (int) Math.sqrt(n-1);
+        
     }
 }
 
